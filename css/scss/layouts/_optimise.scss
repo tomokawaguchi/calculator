@@ -1,0 +1,26 @@
+//=======================================
+// Global section styling
+//=======================================
+
+// Mixin
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.site-section {
+  position: relative;
+  padding: 0 6rem;
+
+  > .inner-wrapper {
+    max-width: 1440px;
+    padding: 4rem 0;
+    margin: 0 auto;
+  }
+
+  // For the media query --> .site-section
+  @include mediaQuery("max", 810px) {
+    padding: 0 3rem;
+  }
+  @include mediaQuery("max", 480px) {
+    padding: 0 1rem;
+  }
+}

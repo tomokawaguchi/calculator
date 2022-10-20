@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Calculator</title>
+  </head>
+  <body>
+    <header class="site-section">
+      <div class="inner-wrapper">
+        <div class="text-wrapper">
+          <h1>Let me help you with the math!</h1>
+          <p>Start typing to solve your math!</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="site-section">
+        <div class="inner-wrapper">
+          <div class="calculator-wrapper">
+            <div class="calculator-inner">
+              <!-- For the result display wrapper -->
+              <div class="top-wrapper">
+                <div id="process-display"></div>
+                <div id="halfway-result"></div>
+              </div>
+
+              <!-- For the buttons wrapper -->
+              <div class="bottom-wrapper">
+                <div class="btns-wrapper">
+                  <button id="btn-ac" class="cal-btn" type="button">AC</button>
+                  <button id="btn-brackets" class="cal-btn btn-operator" type="button">()</button>
+                  <button id="btn-percent" class="cal-btn btn-operator" type="button">&percnt;</button>
+                  <button id="btn-divide" class="cal-btn btn-operator" type="button">&divide;</button>
+                  <button class="cal-btn" type="button">7</button>
+                  <button class="cal-btn" type="button">8</button>
+                  <button class="cal-btn" type="button">9</button>
+                  <button id="btn-times" class="cal-btn btn-operator" type="button">&times;</button>
+                  <button class="cal-btn" type="button">4</button>
+                  <button class="cal-btn" type="button">5</button>
+                  <button class="cal-btn" type="button">6</button>
+                  <button id="btn-minus" class="cal-btn btn-operator" type="button">&minus;</button>
+                  <button class="cal-btn" type="button">1</button>
+                  <button class="cal-btn" type="button">2</button>
+                  <button class="cal-btn" type="button">3</button>
+                  <button id="btn-plus" class="cal-btn btn-operator" type="button">&plus;</button>
+                  <button class="cal-btn" type="button">0</button>
+                  <button id="btn-dot" class="cal-btn" type="button">&#46;</button>
+                  <button id="btn-back" class="cal-btn" type="button"></button>
+                  <button id="btn-equal" class="cal-btn btn-operator" type="button">&#x3D;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

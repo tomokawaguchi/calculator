@@ -1,0 +1,11 @@
+//=======================================
+// Header Stylings
+//=======================================
+
+// Mixin
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+header .text-wrapper {
+  text-align: center;
+}

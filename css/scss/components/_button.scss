@@ -1,0 +1,34 @@
+//=======================================
+// Calculator button styling
+//=======================================
+
+// Mixin
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.cal-btn {
+  @include resetButtonStyling;
+  @include transitionEffect;
+  font-size: 1.4rem;
+  border-radius: 100%;
+  background-color: #efefef;
+  width: 70px;
+  height: 70px;
+
+  &.btn-operator {
+    background-color: #d8d7fa;
+  }
+
+  &#btn-ac {
+    background-color: #fddfee;
+  }
+
+  &#btn-back:after {
+    @include customIcon;
+    content: "\E802";
+  }
+
+  @include onHoverFocus {
+    transform: scale(1.1);
+  }
+}

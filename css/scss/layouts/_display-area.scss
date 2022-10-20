@@ -1,0 +1,22 @@
+//=======================================
+// Display Area Stylings
+//=======================================
+
+// Mixin
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.top-wrapper {
+  @include displayFlex(center, flex-end);
+  flex-direction: column;
+  padding: 1rem;
+
+  #process-display > span {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  #halfway-result > span {
+    font-size: 3rem;
+  }
+}
