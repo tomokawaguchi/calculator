@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Document ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
@@ -381,12 +380,6 @@ p {
 .cal-btn#btn-ac {
   background-color: #fddfee;
 }
-.cal-btn#btn-back:after {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  content: "";
-}
 .cal-btn:hover, .cal-btn:focus {
   transform: scale(1.1);
 }
@@ -464,5 +457,3 @@ header .text-wrapper {
 .top-wrapper #halfway-result > span {
   font-size: 3rem;
 }
-
-/*# sourceMappingURL=style.css.map */
