@@ -23,10 +23,10 @@
     background-color: #fddfee;
   }
 
-  // &#btn-back:after {
-  //   @include customIcon;
-  //   content: "\E802";
-  // }
+  &#btn-back:after {
+    @include customIcon;
+    content: "\E802";
+  }
 
   @include onHoverFocus {
     transform: scale(1.1);

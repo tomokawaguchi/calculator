@@ -93,12 +93,11 @@ function isReadyToCalculate(str) {
   // the last character is number or ')'
   // if there are any (), there need to be a pair of ()
 
-  return (
-    str.search(operators) != -1 &&
-    (operators.test(str.charAt(str.length - 2)) || !isNaN(str.charAt(str.length - 2))) &&
-    (!isNaN(str.charAt(str.length - 1)) || str.charAt(str.length - 1) == ")") &&
-    str.match(/[(]/g)?.length == str.match(/[)]/g)?.length
-  );
+  return true;
+  // str.search(operators) != -1 &&
+  // (operators.test(str.charAt(str.length - 2)) || !isNaN(str.charAt(str.length - 2))) &&
+  // (!isNaN(str.charAt(str.length - 1)) || str.charAt(str.length - 1) == ")") &&
+  // str.match(/[(]/g)?.length == str.match(/[)]/g)?.length
 }
 
 // Update the process area

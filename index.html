@@ -39,28 +39,101 @@
 
               <!-- For the buttons wrapper -->
               <div class="bottom-wrapper">
-                <div class="btns-wrapper">
-                  <button id="btn-ac" class="cal-btn" type="button">AC</button>
-                  <button id="btn-brackets" class="cal-btn btn-operator" type="button">()</button>
-                  <button id="btn-percent" class="cal-btn btn-operator" type="button">%</button>
-                  <button id="btn-divide" class="cal-btn btn-operator" type="button">&divide;</button>
-                  <button class="cal-btn" type="button">7</button>
-                  <button class="cal-btn" type="button">8</button>
-                  <button class="cal-btn" type="button">9</button>
-                  <button id="btn-times" class="cal-btn btn-operator" type="button">&times;</button>
-                  <button class="cal-btn" type="button">4</button>
-                  <button class="cal-btn" type="button">5</button>
-                  <button class="cal-btn" type="button">6</button>
-                  <button id="btn-minus" class="cal-btn btn-operator" type="button">-</button>
-                  <button class="cal-btn" type="button">1</button>
-                  <button class="cal-btn" type="button">2</button>
-                  <button class="cal-btn" type="button">3</button>
-                  <button id="btn-plus" class="cal-btn btn-operator" type="button">+</button>
-                  <button class="cal-btn" type="button">0</button>
-                  <button id="btn-dot" class="cal-btn" type="button">.</button>
-                  <button id="btn-back" class="cal-btn" type="button">DEL</button>
-                  <!-- <i class="custom-icon icon-back">&#xe802;</i> -->
-                  <button id="btn-equal" class="cal-btn btn-operator" type="button">=</button>
+                <div class="btns-wrapper" data-previous-type="">
+                  <button id="btn-ac" class="cal-btn" type="button" data-key="" data-type="clear" data-state="">
+                    AC
+                  </button>
+                  <button
+                    id="btn-brackets"
+                    class="cal-btn btn-operator"
+                    type="button"
+                    data-key="()"
+                    data-type="brackets"
+                    data-state=""
+                  >
+                    ()
+                  </button>
+                  <button
+                    id="btn-percent"
+                    class="cal-btn btn-operator"
+                    type="button"
+                    data-key="%"
+                    data-type="operator"
+                    data-state=""
+                  >
+                    %
+                  </button>
+                  <button
+                    id="btn-divide"
+                    class="cal-btn btn-operator"
+                    type="button"
+                    data-key="/"
+                    data-type="operator"
+                    data-state=""
+                  >
+                    &divide;
+                  </button>
+                  <button class="cal-btn" type="button" data-key="7" data-type="number" data-state="">7</button>
+                  <button class="cal-btn" type="button" data-key="8" data-type="number" data-state="">8</button>
+                  <button class="cal-btn" type="button" data-key="9" data-type="number" data-state="">9</button>
+                  <button
+                    id="btn-times"
+                    class="cal-btn btn-operator"
+                    type="button"
+                    data-key="*"
+                    data-type="operator"
+                    data-state=""
+                  >
+                    &times;
+                  </button>
+                  <button class="cal-btn" type="button" data-key="4" data-type="number" data-state="">4</button>
+                  <button class="cal-btn" type="button" data-key="5" data-type="number" data-state="">5</button>
+                  <button class="cal-btn" type="button" data-key="6" data-type="number" data-state="">6</button>
+                  <button
+                    id="btn-minus"
+                    class="cal-btn btn-operator"
+                    type="button"
+                    data-key="-"
+                    data-type="operator"
+                    data-state=""
+                  >
+                    -
+                  </button>
+                  <button class="cal-btn" type="button" data-key="1" data-type="number" data-state="">1</button>
+                  <button class="cal-btn" type="button" data-key="2" data-type="number" data-state="">2</button>
+                  <button class="cal-btn" type="button" data-key="3" data-type="number" data-state="">3</button>
+                  <button
+                    id="btn-plus"
+                    class="cal-btn btn-operator"
+                    type="button"
+                    data-key="+"
+                    data-type="operator"
+                    data-state=""
+                  >
+                    +
+                  </button>
+                  <button class="cal-btn" type="button" data-key="0" data-type="number" data-state="">0</button>
+                  <button id="btn-dot" class="cal-btn" type="button" data-key="." data-type="decimal" data-state="">
+                    .
+                  </button>
+                  <button
+                    id="btn-back"
+                    class="cal-btn"
+                    type="button"
+                    data-key=""
+                    data-type="back"
+                    data-state=""
+                  ></button>
+                  <button
+                    id="btn-equal"
+                    class="cal-btn btn-operator"
+                    type="button"
+                    data-key="="
+                    data-type="equal"
+                    data-state=""
+                  >
+                    =
+                  </button>
                 </div>
               </div>
             </div>
@@ -71,6 +144,6 @@
     <footer></footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
   </body>
 </html>
