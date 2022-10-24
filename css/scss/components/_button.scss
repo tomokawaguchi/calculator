@@ -23,9 +23,16 @@
     background-color: #fddfee;
   }
 
-  &#btn-back:after {
-    @include customIcon;
-    content: "\E802";
+  // &#btn-back:after {
+  //   @include customIcon;
+  //   content: "\E802";
+  // }
+
+  &#btn-equal {
+    grid-row: 3 / span 3;
+    grid-column: 4 / 5;
+    border-radius: 15px;
+    height: 100%;
   }
 
   @include onHoverFocus {
